@@ -8,7 +8,6 @@ function save() {
 
     resultCars.innerHTML = ""
     resultPay.innerHTML = ""
-    cars = []
     let brand = document.getElementById("brand").value
     let model = document.getElementById("model").value
     let color = document.getElementById("color").value
@@ -25,9 +24,11 @@ function save() {
 function view() {
 
     let listCars = ''
+
     cars.forEach(car => {
         listCars += `<span> ${car.carBrand}/${car.carModel} - ${car.carColor} - ${car.carYear} </span> <br>`
     })
+    
     resultCars.innerHTML = listCars
 
 }
