@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Consulta IPVA</title>
 </head>
+
 <body>
-    
+    <div class="title">CONSULTA IPVA</div>
+
+    <div class="board-insert">
+        <div class="inputs">
+            <div class="ajust-input">
+                <div class="text-inputs">Marca</div>
+                <input type="text" name="brand" id="brand" placeholder="Marca">
+            </div>
+            <div class="ajust-input">
+                <div class="text-inputs">Modelo</div>
+                <input type="text" name="model" id="model" placeholder="Modelo">
+            </div>
+            <div class="ajust-input">
+                <div class="text-inputs">Cor</div>
+                <input type="text" name="color" id="color" placeholder="Cor">
+            </div>
+            <div class="ajust-input">
+                <div class="text-inputs">Ano</div>
+                <input type="number" name="year" id="year" placeholder="Ano">
+            </div>
+            <div class="button" onclick="save()">
+                <div>Salvar</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="board-result">
+        <div class="buttons-result">
+            <div class="button-result" onclick="view()">
+                <div>Visualizar</div>
+            </div>
+            <div class="button-result" onclick="verify()">
+                <div>Verificar</div>
+            </div>
+            <div class="button-result" onclick="reset()">
+                <div>Limpar</div>
+            </div>
+        </div><div class="returns">
+            <div id="resultCars" class="result">
+            </div>
+            <div id="resultPay" class="result">
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
