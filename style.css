@@ -145,3 +145,19 @@ body {
     border-radius: 10px;
 
 }
+
+.count-cars{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background: #8A122A;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    visibility: hidden;
+    gap: 7px;
+}

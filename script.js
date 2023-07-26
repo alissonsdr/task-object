@@ -1,6 +1,8 @@
 let cars = []
 const resultCars = document.getElementById("resultCars")
 const resultPay = document.getElementById("resultPay")
+const countCars = document.getElementById("countCars")
+const numberCars = document.getElementById("numberCars")
 const date = new Date();
 const currentYear = date.getFullYear();
 
@@ -18,6 +20,11 @@ function save() {
         carColor: color,
         carYear: year
     })
+
+    countCars.style.visibility = "visible"
+
+    let count = cars.length
+    numberCars.innerHTML = count
 
 }
 
@@ -37,6 +44,7 @@ function reset(){
 
     resultCars.innerHTML = ""
     resultPay.innerHTML = ""
+    countCars.style.visibility = "hidden"
     cars = []
 
 }
